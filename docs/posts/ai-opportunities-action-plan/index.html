@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.549">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Chris von Csefalvay">
+<meta name="dcterms.date" content="2025-01-16">
+<meta name="description" content="The UK now has an AI Action Plan. The problem is, innovation does not grow from plans.">
+
+<title>Chris von Csefalvay - Deja Vu, All Over Again.</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=395640625"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '395640625', { 'anonymize_ip': true});
+</script>
+<script type="application/ld+json">{"@context":"http://www.schema.org","@type":"person","name":"Chris von Csefalvay","jobTitle":"Director of Biomedical AI/ML","height":"74 inches","gender":"male","description":"Chris von Csefalvay is a computational epidemiologist and data scientist working at the intersection of AI/ML, computational dynamics and public health. He is the author of Computational Modeling of Infectious Disease and a number of research papers.","url":"https://chrisvoncsefalvay.com","image":"https://chrisvoncsefalvay.com/img/IMG_5986.jpeg","address":{"@type":"PostalAddress","addressLocality":"Denver","addressRegion":"CO","postalCode":"80204","addressCountry":"United States"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"University of Oxford","sameAs":"https://en.wikipedia.org/wiki/University_of_Oxford"},{"@type":"CollegeOrUniversity","name":"Cardiff University","sameAs":"https://en.wikipedia.org/wiki/Cardiff_University"}],"worksFor":[{"@type":"Organization","name":"HCLTech"}],"birthDate":"1986-07-15","birthPlace":"Budapest, Hungary","memberOf":[{"@type":"Organization","name":"Royal Society for Public Health"},{"@type":"Organization","name":"TOPRA"},{"@type":"Organization","name":"IEEE"}],"nationality":[{"@type":"Country","name":"United Kingdom"},{"@type":"Country","name":"Hungary"}]}</script>
+
+
+<meta property="og:title" content="Chris von Csefalvay - Deja Vu, All Over Again.">
+<meta property="og:description" content="The UK now has an AI Action Plan. The problem is, innovation does not grow from plans.">
+<meta property="og:image" content="header.webp">
+<meta property="og:site_name" content="Chris von Csefalvay">
+<meta name="twitter:title" content="Chris von Csefalvay - Deja Vu, All Over Again.">
+<meta name="twitter:description" content="The UK now has an AI Action Plan. The problem is, innovation does not grow from plans.">
+<meta name="twitter:image" content="header.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="citation_title" content="Deja Vu, All Over Again.">
+<meta name="citation_author" content="Chris von Csefalvay">
+<meta name="citation_publication_date" content="2025-01-16">
+<meta name="citation_cover_date" content="2025-01-16">
+<meta name="citation_year" content="2025">
+<meta name="citation_online_date" content="2025-01-16">
+<meta name="citation_language" content="en-GB">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Chris von Csefalvay</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../papers"> 
+<span class="menu-text">Papers</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../media"> 
+<span class="menu-text">Media</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts"> 
+<span class="menu-text">The Notebook</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../talks"> 
+<span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://computationalinfectiousdisease.com"> 
+<span class="menu-text">My book</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-ghost-of-centralisation-past" id="toc-the-ghost-of-centralisation-past" class="nav-link active" data-scroll-target="#the-ghost-of-centralisation-past">The Ghost of Centralisation Past</a></li>
+  <li><a href="#too-little-too-late-too-bureaucratic" id="toc-too-little-too-late-too-bureaucratic" class="nav-link" data-scroll-target="#too-little-too-late-too-bureaucratic">Too little, too late, too bureaucratic</a></li>
+  <li><a href="#just-stay-out-of-the-way" id="toc-just-stay-out-of-the-way" class="nav-link" data-scroll-target="#just-stay-out-of-the-way">Just stay out of the way</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Deja Vu, All Over Again.</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">AI</div>
+    <div class="quarto-category">governance</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    The UK now has an AI Action Plan. The problem is, innovation does not grow from plans.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Chris von Csefalvay <a href="mailto:chris@chrisvoncsefalvay.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0003-3131-0864" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">16 January 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>The Department for Science, Innovation and Technology has just dropped its long-awaited <a href="https://assets.publishing.service.gov.uk/media/67851771f0528401055d2329/ai_opportunities_action_plan.pdf">AI Opportunities Action Plan</a>, a 50-page vision of how the UK government plans to guide us into an AI-powered future. The document, adorned with the obligatory glowing circuit board imagery that seems to be mandatory for any government AI publication, promises to transform Britain into an “AI superpower.” As someone who’s spent their career at the intersection of computational science and public policy, I can’t help but feel a familiar sense of déjà vu. We’ve been here before – just with different technology and different buzzwords.</p>
+<section id="the-ghost-of-centralisation-past" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="the-ghost-of-centralisation-past">The Ghost of Centralisation Past</h2>
+<p>Ah, government AI initiatives. Like watching your uncle try to explain TikTok at Christmas dinner – enthusiastic, well-meaning, but somehow missing the point entirely. The UK’s new AI Opportunities Action Plan, released this week with characteristic governmental fanfare, was supposed to inspire and plot the course for the UK’s ship on the stormy seas of AI. But really, it rather brings to mind that most delicious of historical failures: Project Cybersyn.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="D-W7mk4UcAA42hm.png" class="img-fluid figure-img"></p>
+<figcaption>Swivel chairs!</figcaption>
+</figure>
+</div>
+</div><p><sup>1</sup>&nbsp;One of history’s great tragedies is that the winds of change often sweep away lessons before they can fail to their fullest extent. The Allende regime’s fall sadly also brought with it the destruction of Cybersyn before its complete failure would come to be in full evidence.</p></div><p>For those who actually have a life and don’t regularly spend their evenings reading about Cold War technological follies, Cybersyn was Salvador Allende’s attempt to run Chile’s economy through the dark arts of the hype of the day – cybernetics –, a network of telex machines and a room that looked like the love child of Star Trek and Austin Powers. It had swivel chairs. It had buttons. It had everything except, well, actual functionality.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> It was an example of what happens when you have a sensible idea (networking) in pursuit of a dubious goal (central planning) executed on the back of governmental fiat. Back then, the buzzword was ‘cybernetics’, and it was supposed to usher in an era of truly scientific central planning. We would soon all be waving goodbye to the inefficiencies of market economies thanks to… telexes. And big screens.</p>
+<p>This pattern of centrally-planned technological innovation has repeated itself throughout history - from the Soviet Union’s OGAS project<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> to Japan’s Fifth Generation Computer Project. These initiatives share a common thread: they all failed spectacularly despite massive government backing. Innovation, like my attempts at Provençal cuisine, tends to work best when it’s organic and bottom-up, not when it’s directed from above by committee. You can’t will creativity or innovation into existence. Least of all can you do so by governmental fiat.</p>
+<div class="no-row-height column-margin column-container"><p><sup>2</sup>&nbsp;<a href="https://www.youtube.com/@Asianometry">asianometry</a> on YouTube has a <a href="https://www.youtube.com/watch?v=cLOD5f-q0as">wonderful video</a> on this.</p></div></section>
+<section id="too-little-too-late-too-bureaucratic" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="too-little-too-late-too-bureaucratic">Too little, too late, too bureaucratic</h2>
+<p>Fast forward to 2025, and we’re treated to Matt Clifford’s vision of how the UK government can shepherd us into an AI-powered future. The plan isn’t wrong, per se – it’s just adorably optimistic about the ability of government to direct technological evolution, or the beneficial effect of government getting involved in innovation. It’s like trying to herd cats, if the cats were quantum computers and the herders were Whitehall civil servants still struggling with Excel.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<hr>
+<p><strong>Recipe</strong>: Coq au vin</p>
+<ul>
+<li>1 whole chicken, cut into pieces</li>
+<li>750mL decent red wine</li>
+<li>200g lardons</li>
+<li>Pearl onions… lots of them. Two dozen or so.</li>
+<li>500g mushrooms</li>
+<li>2 carrots</li>
+<li>Fresh thyme</li>
+<li>Bay leaves</li>
+</ul>
+<p>Dunk the chicken in the wine and let rest overnight (patience is the name of the game). On the day, brown the lardons slowly in a Dutch oven. Remove, and reserve the fat. Brown the chicken pieces in the fat – avoid crowding your Dutch oven, work in batches if you have to. Sautee the vegetables, and return everything to the Dutch oven, including the chicken – and the wine. Cover and simmer on low-medium heat for 90 minutes. Thicken to taste with a beurre manié. Serve with a thick slab of a hearty, crusty bread.</p>
+<hr>
+</div></div><p>Let’s be real: The UK is already painfully late to this party. While we’re planning to plan about planning our AI infrastructure, OpenAI and Anthropic are training models that make GPT-4 look like a pocket calculator. The plan acknowledges we’re “the third largest AI market in the world” – which sounds impressive until you realize that in absolute terms, Britain’s contribution compared to the front runners (US and PRC) barely amounts to a rounding error.</p>
+<p>The focus on government-directed innovation is particularly eyebrow-raising. The plan calls for establishing ‘AI Growth Zones’, expanding compute infrastructure and creating a new unit called UK Sovereign AI (because if you do not create more bureaucracy, you clearly aren’t doing this government thing well).<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> All potentially good stuff in theory, but premised on the notion that the government can effectively pick winners and shape the development of arguably the most dynamic technology since electricity. And, of course, the notion of ‘growth zones’ might strike one as rather odd considering that most of the work we do gets done in the cloud. I don’t need to be in a ‘growth zone’ to do my job. The extremely delocalised nature of software and AI development makes these echoes from the era of industrial parks and logistical efficiencies sound anachronistic at best, smacking of a misunderstanding of AI in practice at worst.</p>
+<div class="no-row-height column-margin column-container"><p><sup>3</sup>&nbsp;Interestingly, <a href="https://uksovereign.ai">uksovereign.ai</a> leads you to <a href="https://mindfoundry.ai">Mind Foundry</a>, a spin-out of my alma mater that seems to mainly cater for the defence industry.</p></div></section>
+<section id="just-stay-out-of-the-way" class="level2">
+<h2 class="anchored" data-anchor-id="just-stay-out-of-the-way">Just stay out of the way</h2>
+<p>That said, there are some genuinely promising elements. The commitment to building AI infrastructure and expanding compute capacity is crucial - though one wonders if we might have thought about this back when compute was actually available to purchase. The focus on AI safety and ethics is also commendable, even if it feels a bit like installing guardrails after the car has already left the garage.</p>
+<p>What’s missing is an acknowledgment that the most successful government interventions in technology have historically been indirect - creating the conditions for innovation rather than trying to micromanage it. DARPA gave us the internet by funding basic research and then getting out of the way. The UK’s own success stories - from ARM to DeepMind - emerged from an ecosystem that encouraged experimentation and risk-taking, not from government planning.</p>
+<p>As someone who has spent time in both academia and industry, who has seen how innovation actually happens in the trenches of AI research, I can’t help but feel we’re missing the forest for the bureaucratically-approved, committee-selected trees. The UK has world-class AI talent, outstanding universities and a vibrant startup scene. What it needs isn’t more government steering – it needs the government to focus on removing obstacles and then getting out of the way. But hey, at least we’re not building a room full of swivel chairs. Though given some of the proposals in this plan, I wouldn’t rule it out for AI Action Plan 2.0.</p>
+<hr>
+<p><em>Note: These are my personal (and somewhat tongue-in-cheek) views, and may not reflect the views of any organisation, company or board I am associated with, in particular HCLTech or HCL America Inc.&nbsp;My day-to-day consulting practice is complex, tailored to client needs and informed by a range of viewpoints and contributors. <a href="https://chrisvoncsefalvay.com/disclaimer">Click here for a full disclaimer.</a></em></p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{csefalvay2025,
+  author = {Chris von Csefalvay},
+  title = {Deja {Vu,} {All} {Over} {Again.}},
+  date = {2025-01-16},
+  langid = {en-GB}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-csefalvay2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+Chris von Csefalvay. 2025. <span>“Deja Vu, All Over Again.”</span>
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<ol start="3" type="a">
+<li>Chris von Csefalvay, 2011–. <a href="disclaimer">Disclaimer</a></li>
+</ol>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

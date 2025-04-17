@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.549">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Chris von Csefalvay">
+<meta name="dcterms.date" content="2025-01-04">
+<meta name="description" content="2024 was the year of agents. 2025 will be about figuring out how we orchestrate their interactions. Welcome to the year of ecosystems.">
+
+<title>Chris von Csefalvay - After agents</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=395640625"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '395640625', { 'anonymize_ip': true});
+</script>
+<script type="application/ld+json">{"@context":"http://www.schema.org","@type":"person","name":"Chris von Csefalvay","jobTitle":"Director of Biomedical AI/ML","height":"74 inches","gender":"male","description":"Chris von Csefalvay is a computational epidemiologist and data scientist working at the intersection of AI/ML, computational dynamics and public health. He is the author of Computational Modeling of Infectious Disease and a number of research papers.","url":"https://chrisvoncsefalvay.com","image":"https://chrisvoncsefalvay.com/img/IMG_5986.jpeg","address":{"@type":"PostalAddress","addressLocality":"Denver","addressRegion":"CO","postalCode":"80204","addressCountry":"United States"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"University of Oxford","sameAs":"https://en.wikipedia.org/wiki/University_of_Oxford"},{"@type":"CollegeOrUniversity","name":"Cardiff University","sameAs":"https://en.wikipedia.org/wiki/Cardiff_University"}],"worksFor":[{"@type":"Organization","name":"HCLTech"}],"birthDate":"1986-07-15","birthPlace":"Budapest, Hungary","memberOf":[{"@type":"Organization","name":"Royal Society for Public Health"},{"@type":"Organization","name":"TOPRA"},{"@type":"Organization","name":"IEEE"}],"nationality":[{"@type":"Country","name":"United Kingdom"},{"@type":"Country","name":"Hungary"}]}</script>
+
+
+<meta property="og:title" content="Chris von Csefalvay - After agents">
+<meta property="og:description" content="2024 was the year of agents. 2025 will be about figuring out how we orchestrate their interactions. Welcome to the year of ecosystems.">
+<meta property="og:image" content="header.webp">
+<meta property="og:site_name" content="Chris von Csefalvay">
+<meta name="twitter:title" content="Chris von Csefalvay - After agents">
+<meta name="twitter:description" content="2024 was the year of agents. 2025 will be about figuring out how we orchestrate their interactions. Welcome to the year of ecosystems.">
+<meta name="twitter:image" content="header.webp">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Chris von Csefalvay</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../papers"> 
+<span class="menu-text">Papers</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../media"> 
+<span class="menu-text">Media</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts"> 
+<span class="menu-text">The Notebook</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../talks"> 
+<span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://computationalinfectiousdisease.com"> 
+<span class="menu-text">My book</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#agents-are-over-long-live-agents" id="toc-agents-are-over-long-live-agents" class="nav-link active" data-scroll-target="#agents-are-over-long-live-agents">Agents are over (long live agents!)</a></li>
+  <li><a href="#from-agents-to-ecosystems" id="toc-from-agents-to-ecosystems" class="nav-link" data-scroll-target="#from-agents-to-ecosystems">From agents to ecosystems</a></li>
+  <li><a href="#trust-falls-and-rises" id="toc-trust-falls-and-rises" class="nav-link" data-scroll-target="#trust-falls-and-rises">Trust falls (and rises)</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">After agents</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">LLMs</div>
+    <div class="quarto-category">AI</div>
+    <div class="quarto-category">agents</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    2024 was the year of agents. 2025 will be about figuring out how we orchestrate their interactions. Welcome to the year of ecosystems.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Chris von Csefalvay <a href="mailto:chris@chrisvoncsefalvay.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0003-3131-0864" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">4 January 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>When he first began his excavations at what is today Hisarlik in modern-day Türkiye, Heinrich Schliemann set out to find a single city – the city of Homer’s Iliad, a city many actually felt lay in the realms of fiction rather than any map he could lay his hands on. By the time excavations were over, Schliemann would find not one but nine cities, all built on top of each other.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> In that, he found something relatively common – cities built on top of cities, each turning the last one into the foundation of the next.</p>
+<div class="no-row-height column-margin column-container"><p><sup>1</sup>&nbsp;Some of which he would blow up. Schliemann’s excavations were peak cowboy archaeology.</p></div><p>Technology is not much different. What Newton described as ‘standing on the shoulders of giants’ was an astute reflection of this fact. When I surveyed the landscape of LLMs in late 2023, I saw – and I was not alone in doing so! – that there was more to the practical application of LLMs than their most ubiquitous ‘low hanging fruit’ use case at the time – that is, chatbots and conversational interfaces. That notion, of course, became the agentic revolution that emerged as the most talked-about topic of 2024.</p>
+<p>If your hot take for 2025 is that ‘agentic AI is going to dominate’, however, you have missed the train. The agentic revolution is over, done and accomplished. In my <a href="https://chrisvoncsefalvay.com/posts/five-wild-guesses/">wild-ass guessing of what 2025 may bring</a>, I tried to reflect as a leading theme on what I believe comes after agents – namely, systems of interaction. In this post, I hope to expand on that notion a little.</p>
+<section id="agents-are-over-long-live-agents" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="agents-are-over-long-live-agents">Agents are over (long live agents!)</h2>
+<p>Looking back at 2024, I have to laugh at how quickly the agentic revolution went from being seen as wild-eyed speculation to something almost embarrassingly obvious. I spent a good chunk of late 2023 explaining to sceptical audiences why autonomous AI agents were not just chatbots that could call APIs. I would spend most of the next year fielding calls from the same audiences to help develop a strategy for agentic AI. The whiplash-inducing speed of this transformation was stunning even by AI’s standards, where we seem to have moved into a 24-minute, rather than 24-hour, news cycle. What started as hacky demos and GitHub repos with more stars than working features evolved into agents casually writing production code, running research pipelines and tying all of this together into operational workflows that actually made sense. The real shift was not just in what these agents could do – it was in how they subtly changed our relationship with AI systems in the process. We went from the digital equivalent of playing 20 Questions with chatbots to having persistent virtual assistants that could actually maintain context, manage complex tasks and make reasonable decisions without needing to be guided through every minor choice. For someone who spent years working with the digital equivalent of goldfish, this was heady stuff.</p>
+<p>The thing about agents is that their true power is not in what they can do alone – it is in how they work together. This is not just some hand-wavy My Little Pony-esque ‘collaboration is magic’ adage. It is fundamental to the nature of what an agent is, and why we even bother with them. An agent that can write code is useful, but an agent that can write code while collaborating with another that handles testing while yet another manages deployment and a fourth monitors performance is truly transformative. The industry’s current obsession with making individual agents (or, even worse, just individual foundation models) more powerful is like trying to make a better dish by adding more of a particular ingredient.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> The magic of a perfect meal lies not in how many spoonfuls of exotic ingredients like fennel pollen and saffron threads you can dump into your pan, but in the fine balance between whatever ends up on a plate – even if it is just arugula, shaved parmesan and balsamic glaze (see recipe in sidebar). In short, the magic is in the complex web of interactions between the ingredients, the emergent phenomena that arise from their coexistence. We see this pattern play out all the time in technology. The apex of maturity always involved interaction. Consider, most ubiquitously, the web: from individual sites, we evolved to a more semantic web and eventually, a knowledge/information ecosystem driven through APIs. We are at the cusp of that third phase with AI agents, and anyone still fixated solely on individual agent capabilities is missing the plot entirely.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<div class="no-row-height column-margin column-container"><p><sup>2</sup>&nbsp;More AI folks should spend more time in the kitchen. This is <em>my</em> hot take for 2025.</p><p><sup>3</sup>&nbsp;This is even more so as agents themselves are becoming meaningless. An agent, in a properly designed ecosystem, is entirely replaceable. It implements a contract or protocol. It then does not quite matter what that agent does. And if that sounds a little like the Liskov substitutability principle, then that is not quite by accident.</p><div class="">
+<hr>
+<p><strong>Recipe</strong>: The simplest salad you’ll ever love</p>
+<ul>
+<li>A bunch of baby arugula</li>
+<li>1/4 cup of your favourite nuts</li>
+<li>freshly ground salt and pepper</li>
+<li>Parmigiano Reggiano, lots</li>
+<li>1 clove garlic</li>
+<li>1/4 cup lemon juice, freshly squeezed</li>
+<li>1/2tsp honey</li>
+<li>1/4 cup extra virgin olive oil</li>
+<li>1tsp Dijon, the smoother the better</li>
+<li>1/2tsp fresh thyme</li>
+<li>optional: a good balsamic reduction</li>
+</ul>
+<p>Mix the lemon juice, minced garlic, Dijon and honey, and salt &amp; pepper to your heart’s content. While whisking, drizzle in the olive oil. Add the thyme and taste – add some more olive oil if it’s too acidic for your taste. In a separate bowl, add the arugula, and toss it with the vinaigrette you just made. Mix, using your hands – plastic or wooden mixing tools break the arugula leaves, which renders the whole thing bitter. Plate, then cover with the nuts. Using a coarse Microplane grater, shave enough Parmigiano Reggiano to make the whole thing a happy mixture. Enjoy on its own or as a light side.</p>
+<hr>
+</div></div>
+<p>We are already seeing the first tentative steps from multi-agent systems towards ecosystems of agents, even if most have not recognised them as such. Enterprise agent marketplaces will be 2025’s hot commodities, drawing on past experiences with data marketplaces and exchanges. But conceptually, most seem to still treat agents as distinct pieces of software rather than collaborators in an ecosystem. The real pioneering work for the coming year(s) will be in developing the frameworks and protocols at the edges: agent orchestration systems that go beyond simple API calling, trust negotiation protocols that let agents establish their capabilities and limitations and collaborative frameworks that enable genuine multi-agent workflows. Technical implementations of these, however, are scarce. Working out an interaction protocol is not glamorous (trust me – speaking from personal experience), and there are going to be few headlines and fewer medals in working out how this sudden flood of AI agents is going to interoperate. And yet, this is the manifest destiny of agentic AI. Of all targeted agentic AI spend in 2025, marketplaces and interoperability orchestrators will without a doubt be the best dollars spent bar none.</p>
+</section>
+<section id="from-agents-to-ecosystems" class="level2">
+<h2 class="anchored" data-anchor-id="from-agents-to-ecosystems">From agents to ecosystems</h2>
+<p>What is an ecosystem? In its natural sense, we have relatively little trouble distinguishing between a species, an individual, a population and an ecosystem. In short, an ecosystem has three distinguishing features:</p>
+<ol type="1">
+<li>Diversity: ecosystems consist of multiple species that all play their role, quite similarly to agents in a well-architected system.</li>
+<li>Interactions/rhizomality: ecosystems become what they are from the interactions between their participants, not the mere assemblage of the participants. In that sense, a good meal is an ‘ecosystem’ of sorts, where the acids balance out the fats and so on. In a more functional context, however, as we are dealing with here, what makes a bunch of agents an ecosystem is their ability to exercise a higher function in complementarity.</li>
+<li>Interdependence: ecosystems produce their benefits through these interactions, which collectively amount to more than the sum of the parts.</li>
+</ol>
+<p>In an agentic AI system, our definition can largely be similar: an agentic AI ecosystem is a bunch of agents with different functionalities that interact and thereby unfold value. An ecosystem implies more than just the ability to pass messages between agents or chain them together in sequence. It requires the emergence of specialisation, of niches, of ways to establish trust and capabilities, and – crucially – ways to negotiate the terms of interaction. Unlike today’s relatively deterministic structures, this environmental discovery could eventually be self-governing, more like a bustling market bazaar, where agents can discover each other’s capabilities, negotiate terms of engagement, establish trust relationships, and even form longer-term collaborative partnerships. This is a fundamental reimagining of how artificial intelligence systems interact with each other.</p>
+<p>The emergence of enterprise agent marketplaces will be one of the defining developments of 2025, but most organisations are still thinking about them wrong. The knee-jerk reaction is to build something akin to an app store: a catalogue of pre-built agents with rating systems and standard pricing. That is a useful (and often indispensable) first step, but it could be so much more. The real value of these marketplaces will not be in the agents themselves, but in the curation and verification mechanisms they enable. Think less ‘app store’ and more ‘commodity futures exchange’: what matters is not just what is being traded, but the rules of engagement, the verification of capabilities, the establishment of trust, and the standardisation of interfaces. We will need ways to verify that agents can actually do what they claim, that they operate within defined constraints and that they can be trusted with sensitive data or critical operations. This is where enterprise agent marketplaces will differentiate themselves from consumer platforms – through robust governance frameworks that make agent deployment actually feasible in regulated environments.</p>
+<p>The real challenge – and opportunity – in building these ecosystems lies in standardising the right things while leaving room for innovation. Over-standardisation kills ecosystems as surely as no standardisation at all. The emerging protocols for agent interaction will need to thread this needle. They will have to standardise the essential patterns of trust establishment, capability discovery and resource negotiation, while remaining flexible enough to accommodate new forms of agent collaboration we have not even imagined yet. This is where the enterprise agent marketplace builders of 2025 will either make their fortunes or waste their investors’ money. The winners will be those who create the right balance of structure and flexibility – the ones who understand that they are not building an app store so much as cultivating an ecosystem.</p>
+</section>
+<section id="trust-falls-and-rises" class="level2">
+<h2 class="anchored" data-anchor-id="trust-falls-and-rises">Trust falls (and rises)</h2>
+<p>The hardest part of building these agentic ecosystems is not the technical implementation (in fact, we arguably have most of that already in place, mutatis mutandis, for data and other asset marketplaces) – but the trust architecture. In particular where agents choose and commission other agents to perform tasks as delegates or helpers, we need to find protocols that outline the powers of delegation and the flows of authority in such an architecture. The frameworks we are building now are laughably primitive compared to what we will need, mostly amounting to simple API keys and rate limits. It is like trying to build a modern financial system with nothing but paper IOUs and handshake agreements.</p>
+<p>The chain of trust problem in agent delegation is fascinating precisely because it mirrors and yet fundamentally differs from how we handle human organisational hierarchies. When Agent A delegates a task to Agent B, which in turn needs to commission Agent C, we are not just passing around access tokens - we are creating a chain of responsibility that needs to be both traceable and constrained. Each link in this chain needs to carry not just the authority to act, but also the constraints and audit requirements of all previous links. An agent operating as a fourth-level delegate should still be bound by the original constraints set at the root of the delegation tree, even if it has no direct knowledge of them. This is not just about security - it is about maintaining coherent behaviour across increasingly complex chains of interaction. The financial sector learned this lesson the hard way with automated trading systems: without clear chains of responsibility and well-defined constraint propagation, you end up with cascading failures that no single participant can explain or control.</p>
+<p>The next year will be defined not by breakthroughs in individual agent capabilities, but by our success or failure in building these frameworks for trusted collaboration. The winners will not be those who build the most powerful agents, but those who crack the code of helping agents work together effectively and safely. This is not just about technology – it is about understanding how to create systems of trust that can scale with the complexity of agent interactions.</p>
+<p>The agentic revolution of 2024 was just the overture. The real symphony begins when we figure out how to let the players actually work together in concert. Those who are still focused solely on building better individual agents are composing for soloists in an age that demands orchestras.</p>
+<p>The future belongs to those who can conduct.</p>
+<hr>
+<p><em>Note: These are my personal (and somewhat tongue-in-cheek) views, and may not reflect the views of any organisation, company or board I am associated with, in particular HCLTech or HCL America Inc.&nbsp;My day-to-day consulting practice is complex, tailored to client needs and informed by a range of viewpoints and contributors. <a href="https://chrisvoncsefalvay.com/disclaimer">Click here for a full disclaimer.</a></em></p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{csefalvay2025,
+  author = {Chris von Csefalvay},
+  title = {After Agents},
+  date = {2025-01-04},
+  langid = {en-GB}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-csefalvay2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+Chris von Csefalvay. 2025. <span>“After Agents.”</span>
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<ol start="3" type="a">
+<li>Chris von Csefalvay, 2011–. <a href="disclaimer">Disclaimer</a></li>
+</ol>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
