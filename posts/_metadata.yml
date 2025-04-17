@@ -1,0 +1,22 @@
+author:
+  - id: cvc
+    number: 1
+    name:
+      given: Chris
+      family: Csefalvay
+      literal: Chris von Csefalvay
+      non-dropping-particle: von
+    orcid: 0000-0003-3131-0864
+    email: chris@chrisvoncsefalvay.com
+format:
+  html:
+    df-print: paged
+    toc: true
+    lang: en-GB
+    code-overflow: wrap
+    mermaid:
+      theme: neutral
+citation:
+  type: article
+reference-location: margin
+citation-location: margin
