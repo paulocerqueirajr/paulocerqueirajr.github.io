@@ -9,7 +9,7 @@ resources:
   - CNAME
 
 website:
-  title: "Chris von Csefalvay"
+  title: "Paulo Cerqueira Jr"
   description: "Chris von Csefalvay is a computational epidemiologist/data scientist working at the intersection of AI, epidemiology and public health."
   navbar:
     left:
@@ -28,7 +28,7 @@ website:
       - href: https://computationalinfectiousdisease.com
         text: My book
   page-footer:
-    left: "(c) Chris von Csefalvay, 2011–. [Disclaimer](disclaimer)"
+    left: "(c) Paulo Cerqueira Jr, 2025–. [Disclaimer](disclaimer)"
   twitter-card: true
   open-graph: true
   google-analytics: "395640625"
